@@ -1,2 +1,90 @@
 @use "../abstract/variables" as *;
 @use "../components/mixins" as *;
+
+.footer {
+    background-color: $title;
+    color: $white;
+    text-align: center;
+
+    &__content {
+        max-width: 375px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    &__logo img {
+        max-width: 120px;
+        margin-bottom: 2rem;
+    }
+
+    &__menu ul {
+        padding: 0;
+        margin: 0 0 2rem;
+        list-style: none;
+
+        li {
+            margin-top: 0.3rem;
+        }
+
+        a {
+            color: $white;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+    }
+
+    &__info {
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+
+        p {
+            margin-top: 0.6rem;
+        }
+    }
+
+    &__hours {
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
+
+        .title {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.6rem;
+        }
+    }
+
+    &__social {
+        font-size: 0.9rem;
+
+        p {
+            margin-bottom: 0.8rem;
+        }
+
+        &__icons,
+        .footer__icons {
+            display: inline-flex;
+            gap: 1rem;
+
+            svg {
+                width: 20px;
+                fill: white;
+            }
+        }
+    }
+
+    &__bottom {
+        background-color: $title;
+        color: $white;
+        border: solid 1px $brown;
+        padding: 1.5rem;
+        font-size: 0.8rem;
+
+        a {
+            display: block;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}

@@ -19,18 +19,20 @@
     <!-- En tête du site -->
 
     <header class="header">
+        <div class="header__content">
 
-        <div class="header__logo">
-            <img src="images/logo.svg" alt="logo_patachou">
+            <div class="header__logo">
+                <img src="images/logo.svg" alt="logo_patachou">
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Notre savoir-faire</a></li>
+                    <li><a href="#">Nos pâtisseries</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="header__nav">
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Notre savoir-faire</a></li>
-                <li><a href="#">Nos pâtisseries</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!-- Section Bannière-->
@@ -96,11 +98,17 @@
     </section>
 
     <section class="about">
-        <div class="about__description">
+        <div class="about__logo">
+            <img src="images/poche-douille_histoire-patachou.png" alt="poche-douille_histoire-patachou">
+        </div>
+        <div class="about__title">
 
             <img src="images/quote.svg" alt="">
-            <h2>Patachou, toute une histoire…
+            <h2>
+                Patachou, toute une histoire…
             </h2>
+        </div>
+        <div class="about__description">
             <p>
                 Une petite pâtisserie familiale, fondée il y a plusieurs décennies, se transmet de génération en
                 génération, préservant l'artisanat traditionnel et les recettes secrètes. Connue pour ses créations
@@ -109,10 +117,110 @@
                 chaque pâtisserie raconte une histoire d'amour du métier
             </p>
             <button class="about__button">Notre histoire</button>
+            <hr>
+        </div>
+
+    </section>
+
+    <section class="contact">
+        <div class="contact__content">
+            <h2>Des gâteaux pour votre évènement ?</h2>
+            <p>
+                Pour vos évènements exclusifs – anniversaire, séminaire d’entreprise ou réception privée –
+                offrez à vos invités une sélection raffinée de pâtisseries, biscuits, mignardises et tartes,
+                soigneusement élaborées pour sublimer chaque moment.
+            </p>
+
+            <form class="contact__form" action="#" method="post">
+                <div class="contact__field">
+                    <label for="name">Votre nom et prénom</label>
+                    <input type="text" id="name" name="name" placeholder="Prénom Nom">
+                </div>
+
+                <div class="contact__field">
+                    <label for="email">Votre email</label>
+                    <input type="email" id="email" name="email" placeholder="email@exemple.com">
+                </div>
+
+                <div class="contact__field">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+
+                <div class="contact__checkbox">
+                    <input type="checkbox" id="privacy" name="privacy">
+                    <label for="privacy">J’ai lu et j’accepte la politique de confidentialité</label>
+                </div>
+
+                <button type="submit" class="contact__button">Envoyer</button>
+            </form>
         </div>
     </section>
 
+    <section class="store">
+        <div class="store__content">
+            <h2>Notre atelier et notre boutique</h2>
+            <p>
+                14 Boulevard Yvonne Poirel<br>
+                49000 ANGERS
+            </p>
+        </div>
+    </section>
+    <section class="location">
+        <div class="location__container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5394.964361531286!2d-0.5643465868871219!3d47.461032497896454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480878ba132ff4e7%3A0xc11116e4d0e11bae!2s14%20Bd%20Yvonne%20Poirel%2C%2049000%20Angers!5e0!3m2!1sfr!2sfr!4v1763490790942!5m2!1sfr!2sfr">
+            </iframe>
+    </section>
+    <footer class="footer">
+        <div class="footer__content">
 
+            <div class="footer__logo">
+                <img src="images/logo-white.svg" alt="Patachou">
+            </div>
+
+            <nav class="footer__menu">
+                <ul>
+                    <li><a href="#" class="active">Accueil</a></li>
+                    <li><a href="#">Notre savoir-faire</a></li>
+                    <li><a href="#">Nos pâtisseries</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__info">
+                <p>02 40 50 40 50</p>
+                <p>14 Bd Yvonne Poirel<br>49000 ANGERS</p>
+            </div>
+
+            <div class="footer__hours">
+                <p class="title">Horaires d’ouvertures</p>
+                <p>Mardi au vendredi : 11h – 19h<br>Samedi : 10h30 – 19h</p>
+            </div>
+
+            <div class="footer__social">
+                <p>Suivez-nous</p>
+                <div class="footer__icons">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5l0-170.3-52.8 0 0-78.2 52.8 0 0-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4l0 70.8c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2l0 27.8 83.6 0-14.4 78.2-69.3 0 0 175.9C413.8 494.8 512 386.9 512 256z" />
+                        </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de confidentialité</a>
+        </div>
+    </footer>
 
 
 

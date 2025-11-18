@@ -1,2 +1,61 @@
 @use "../abstract/variables" as*;
-@use "../components/mixins" as* ;
+@use "../components/mixins" as*;
+
+.product {
+    background-color: $brown;
+    color: $white;
+    padding: 3rem 1.5rem 2.5rem;
+    text-align: center;
+
+    // on limite la largeur en mobile pour se rapprocher de la maquette
+    
+    margin: 0 auto;
+
+    h3 {
+        font-size: 1.1rem;
+        margin-bottom: 2.5rem;
+        line-height: 1.4;
+    }
+
+    &__card {
+        margin-bottom: 3rem;
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 220px;
+            margin: 0 auto 1.5rem;
+            border-radius: 2px;
+            object-fit: cover;
+        }
+
+        h4 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            max-width: 260px;
+            margin: 0 auto;
+            color: $white;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        margin-top: 0.5rem;
+        padding: 0.7rem 1.2rem;
+        border: 1px solid $white;
+        background-color: transparent;
+        color: $white;
+        font-size: 0.75rem;
+        line-height: 1.4;
+        text-transform: none;
+        // cursor: pointer;
+        letter-spacing: 0.03em;
+        
+
+    }
+}
