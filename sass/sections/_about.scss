@@ -1,0 +1,9 @@
+@use "../abstract/variables" as *;
+@use "../components/mixins" as *;
+
+.about {
+    img {
+        width:100px;
+    }
+
+}

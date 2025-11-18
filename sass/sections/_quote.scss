@@ -1,0 +1,41 @@
+@use "../abstract/variables" as * ;
+@use "../components/mixins" as * ;
+
+
+// 
+.quote {
+    position: relative;
+    height: 90vh;
+
+    &__content {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    &__extrait {
+        margin-bottom: 1.5rem;
+
+        h2 {
+            line-height: 1.2;
+        }
+
+        p {
+            
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+    }
+
+    &__description {
+        margin-top: 4rem;
+        p {
+            padding: 5px;
+            border: solid 1px $title;
+            line-height: 1.2;
+        }
+    }
+}

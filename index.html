@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Patachou</title>
 </head>
 
@@ -18,7 +18,8 @@
 
     <!-- En tête du site -->
 
-    <header class="header_">
+    <header class="header">
+
         <div class="header__logo">
             <img src="images/logo.svg" alt="logo_patachou">
         </div>
@@ -35,21 +36,28 @@
     <!-- Section Bannière-->
 
     <section class="banner">
-        <div class="banner__images">
-            <img src="images/haute-couture-2.jpg" alt="">
-            <div class="banner__title">
-                <h1>Pâtisseries haute couture</h1>
-            </div>
+        <div class="banner__title">
+            <h1>Pâtisseries haute couture</h1>
         </div>
-        <div class="banner__quote">
-            <h2>&#10077;De toutes les passions, la seule vraiment respectable me parait être la gourmandise.&#10078;
-            </h2>
-            <p>Guy de Maupassant</p>
+    </section>
 
-            <p class="banner__extrait">Nos délicieux gâteaux sont confectionnés avec soin de manière artisanale, en
-                utilisant des ingrédients bruts issus de l’agriculture biologique, tout en respectant rigoureusement les
-                saisons. Sans conservateurs, sans colorants ni d’arômes artificiels, nos créations mettent en avant la
-                pureté des saveurs.</p>
+    <section class="quote">
+        <div class="quote__content">
+            <div class="quote__extrait">
+                <h2>
+                    &#10077;De toutes les passions, la seule vraiment respectable me parait être la gourmandise.&#10078;
+                </h2>
+                <p>Guy de Maupassant</p>
+            </div>
+
+            <div class="quote__description">
+                <p>
+                    Nos délicieux gâteaux sont confectionnés avec soin de manière artisanale, en utilisant des
+                    ingrédients bruts issus de l’agriculture biologique, tout en respectant rigoureusement les saisons.
+                    Sans conservateurs, sans colorants ni d’arômes artificiels, nos créations mettent en avant la pureté
+                    des saveurs.
+                </p>
+            </div>
         </div>
     </section>
     <section class="product">
@@ -57,36 +65,40 @@
         <div class="product__card">
             <img src="images/irresistible.jpg" alt="l'irrésistible">
             <h4>L’irrésistible</h4>
-            <p>Le chou doré, légèrement croustillant, est garni d'une crème onctueuse à la pistache, dévoilant des
+            <p>
+                Le chou doré, légèrement croustillant, est garni d'une crème onctueuse à la pistache, dévoilant des
                 saveurs subtiles et raffinées. Saupoudrée de pistaches concassées, la pâtisserie est sublimée par un
-                équilibre parfait entre douceur fondante et touche croquante.</p>
+                équilibre parfait entre douceur fondante et touche croquante.
+            </p>
         </div>
 
         <div class="product__card">
             <img src="images/delicat.jpg" alt="le délicat">
             <h4>Le délicat</h4>
-            <p>La pâte feuilletée légère et dorée est imprégnée d'une délicate crème parfumée à la rose, laissant
+            <p>
+                La pâte feuilletée légère et dorée est imprégnée d'une délicate crème parfumée à la rose, laissant
                 s’épanouir des arômes floraux subtils et envoûtants. Saupoudrée de pétales de rose, la pâtisserie est
-                magnifiée par un équilibre entre douceur fondante et fraîcheur florale.</p>
+                magnifiée par un équilibre entre douceur fondante et fraîcheur florale.
+            </p>
         </div>
 
         <div class="product__card">
             <img src="images/impetueux.jpg" alt="l'impétueux">
             <h4>L'impétueux</h4>
-            <p>L’impétueux
+            <p>
                 La pâte moelleuse est enrobée d'une ganache intense au chocolat noir, révélant des notes profondes et
                 corsées à chaque bouchée. Sublimé par une fine couche de cacao amer, le dessert est magnifié par un
-                contraste parfait entre l'onctuosité du chocolat et une légère amertume.</p>
+                contraste parfait entre l'onctuosité du chocolat et une légère amertume.
+            </p>
         </div>
-        <button class="product__btn">Découvrir toutes nos délicieuses pâtisseries</button>
+        <button class="product__btn">Découvrir toutes nos délicieuses pâtisseries
+        </button>
     </section>
 
     <section class="about">
-        <img src="images/poche-douille_histoire-patachou.png" alt="poche à douille">
         <div class="about__description">
-            
-        
-            <img class="about__symbole" src="images/quote.svg" alt="">
+
+            <img src="images/quote.svg" alt="">
             <h2>Patachou, toute une histoire…
             </h2>
             <p>
