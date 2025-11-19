@@ -77,6 +77,9 @@ p {
   text-decoration: none;
   font-size: 0.9rem;
 }
+.footer__menu ul a:hover {
+  color: #ab864c;
+}
 .footer__info {
   margin-bottom: 2rem;
   font-size: 0.9rem;
@@ -101,15 +104,13 @@ p {
 .footer__social p {
   margin-bottom: 0.8rem;
 }
-.footer__social__icons,
-.footer__social .footer__icons {
+.footer__icons {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-flex; /*permet d'aligner les deux icones*/
   gap: 1rem;
 }
-.footer__social__icons svg,
-.footer__social .footer__icons svg {
+.footer__icons svg {
   width: 20px;
   fill: white;
 }
@@ -124,6 +125,9 @@ p {
   display: block;
   color: #fff;
   text-decoration: none;
+}
+.footer__bottom a:hover {
+  color: #ab864c;
 }
 
 .about {

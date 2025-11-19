@@ -31,6 +31,9 @@
             text-decoration: none;
             font-size: 0.9rem;
         }
+        a:hover {
+            color:$brown;
+        }
     }
 
     &__info {
@@ -61,18 +64,20 @@
         p {
             margin-bottom: 0.8rem;
         }
+    }
 
-        &__icons,
-        .footer__icons {
-            display: inline-flex;
-            gap: 1rem;
+    &__icons {
 
-            svg {
-                width: 20px;
-                fill: white;
-            }
+        display: inline-flex; /*permet d'aligner les deux icones*/
+        gap: 1rem;
+
+        svg {
+            width: 20px;
+            fill: white;
         }
     }
+    
+    
 
     &__bottom {
         background-color: $title;
@@ -86,5 +91,10 @@
             color: $white;
             text-decoration: none;
         }
+
+        a:hover {
+            color:$brown;
+        }
     }
 }
+    
