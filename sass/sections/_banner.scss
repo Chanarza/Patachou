@@ -1,35 +1,56 @@
-@use "../abstract/variables" as*;
-@use "../components/mixins" as* ;
+@use "../abstract/variables" as *;
+@use "../components/mixins" as *;
 
 
 .banner {
+    min-height: 260px;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    background-image: url("../images/haute-couture-2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 45vh;
-    position: relative;
-    
+    background: url("../../images/haute-couture-2.jpg") center / cover no-repeat;
 
     &__title {
-
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
         background-color: $banner;
-        width: 70%;
-        height: 110px;
-        opacity: 0.8;
-        margin: 0 auto;
-        padding : 15px;    
+        padding: 1.25rem 1.75rem;
+        max-width: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        opacity: 90%;
+
+        h1 {
+            margin: 0;
+            font-family: $ftitle;
+            color: $title;
+            font-size: 1.4rem;
+            line-height: 1.4;
+            text-transform: capitalize;
+        }
     }
 
-    &__title h1 {
-        font-size: 1.4rem;
-        text-transform:capitalize;
+    // VERSION TABLETTE
+
+    @media (min-width: 620px) {
+        min-height: 320px;
+        padding: 3rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__title {
+            max-width: 540px;
+            padding: 2rem 4rem;
+            width: 80%;
+            height: 150px;
+            opacity: 0.8;
+
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
     }
-    
 }

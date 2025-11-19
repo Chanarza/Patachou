@@ -1,0 +1,17 @@
+@use "../abstract/variables" as * ;
+@use "../components/mixins" as * ;
+
+@font-face {
+    font-family: "Kaisei Decol, Poppins";
+    src: url(../fonts/Kaisei_Decol/KaiseiDecol-Regular.ttf) format('ttf'), url(../fonts/Poppins/Poppins-Regular.ttf) format('ttf');
+
+}
+
+.body {
+    h1, h2, h3, h4 {
+        font-family: $ftitle;
+    }
+    a, p, button {
+        font-family: $fpara;
+    }
+}
